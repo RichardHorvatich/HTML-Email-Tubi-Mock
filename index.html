@@ -14,6 +14,7 @@
         body {
             margin: 0;
             background-color: #FFFFFF;
+            
         }
         table {
             border-spacing: 0;
@@ -29,6 +30,7 @@
             width: 100%;
             table-layout: fixed;
             background-color: #FFF;
+            overflow-x: hidden;
         }
 
         .main{
@@ -80,7 +82,7 @@
 
         .button{
             background-color: white;
-            width: 250px;
+            width: 200px;
             height: 60px;
             border: none;
             padding: 15px 50px;
@@ -107,18 +109,32 @@
             text-align: center;
         }
 
+        @media(max-width: 320px){ 
+            .padding{
+                padding: 10px 10px;
+                width: 150px;
+            }
+          }
+
+        @media (max-width: 280px){
+            .padding{
+                padding: 8px 8px;
+                width: 80px;
+        }
+    }
+
 
     </style>
 </head>
 <body>
 
     <!---Tubi Header / Icon-->
-        <div class="wrapper">
+        <div class="wrapper" width="100%">
             <table class="main" width="100%">
 
     <!---Tubi Header / Icon-->
                 <tr>
-                    <td height="100px">
+                    <td height="100px" width="100%">
                         <table width= "100%">
                             <tr>
                                 <td class="header">
@@ -153,11 +169,11 @@
 
     <!--Banner Movie-->    
                 <tr>
-                    <td>
-                        <a href="https://tubitv.com/category/most_popular_action"><img src="images\genesys.jpg" width="91%" style="padding: 1px 27px;"></a>
-                        <p style="font-size: 30px; font-weight: bold; padding: .5px 27px; color: white; font-family: 'Roboto', sans-serif; ">Terminator: Genisys</p>
+                    <td width="100%">
+                        <a  href="https://tubitv.com/category/most_popular_action" ><img src="images\genesys.jpg" width="100%"></a>
+                        <p style="font-size: 30px; font-weight: bold; padding-bottom: 1px; padding-left: 27px; color: white; font-family: 'Roboto', sans-serif; ">Terminator: Genisys</p>
                         <p style="font-size: 12px; text-decoration:underline; padding: 1px 27px; color: white; font-family: 'Roboto', sans-serif;">Arnold Schwarzenegger</p>
-                        <p style="color: white; font-size: 12px; padding: 1px 27px; font-family: 'Roboto', sans-serif;">The original timeline of The Terminator has its course altered
+                        <p style="color: white; font-size: 12px; padding-bottom: 50px; padding-left: 27px; padding-right: 10px; font-family: 'Roboto', sans-serif;">The original timeline of The Terminator has its course altered
                             when Skynet and The Resistence send people back in time unexpectedly. Skynet has captured John Connor and its once again up to Kyle Reese and Sarah Connor to 
                             prevent the future war.
                         </p>
@@ -177,10 +193,10 @@
                                     <table class="content">
                                         <tr>
                                             <td style="text-align: left;">
-                                                <a href="https://tubitv.com/home"><img src="images\blackswanwide.jpg" width="100%" height="147px" style="padding: 3px 1px;"></a>
+                                                <a href="https://tubitv.com/home"><img src="images\black swan.jpg" width="100%" height="147px" style="padding: 3px 1px;"></a>
                                                 <p style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: bold; letter-spacing: 1px;">Black Swan</p>
                                                 <p style="color: white; font-size: 13px; text-decoration:underline; ">Natalie Portman</p>
-                                                <p style="color: white; font-size: 13px; font-family: 'Roboto', sans-serif;">A ballerina becomes entangled in strange events 
+                                                <p style="color: white; font-size: 13px; font-family: 'Roboto', sans-serif; padding-bottom: 50px;">A ballerina becomes entangled in strange events 
                                                     which all unravel as she strives toward the 
                                                     perfect performance. 
                                                 </p>
@@ -200,7 +216,7 @@
                                                 <a href="https://tubitv.com/home"><img src="images\avatar.jpg" width="100%" style="padding: 3px 1px;"></a>
                                                 <p style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: bold; letter-spacing: 1px;">Avatar</p>
                                                 <p style="color: white; font-size: 13px; text-decoration:underline; ">Sam Worthington</p>
-                                                <p style="color: white; font-size: 13px; font-family: 'Roboto', sans-serif;">A man is sent to another planet where he is 
+                                                <p style="color: white; font-size: 13px; font-family: 'Roboto', sans-serif; padding-bottom: 50px;">A man is sent to another planet where he is 
                                                     digitally transferred into a temporary
                                                     body to save a planet and its people.
                                                 </p>
@@ -224,10 +240,10 @@
     <!--Featured Movie/Banner Img-->
     <tr>
         <td>
-            <a href="https://tubitv.com/movies/622746"><img src="images\Conair.jpg" width="91%" style="padding: 1px 27px;"></a>
+            <a href="https://tubitv.com/movies/622746"><img src="images\Conair.jpg" width="100%"></a>
             <p style="font-size: 30px; font-weight: bold; padding: .5px 27px; color: white; font-family: 'Roboto', sans-serif;">ConAir</p>
             <p style="font-size: 12px; text-decoration:underline; padding: 1px 27px; color: white; font-family: 'Roboto', sans-serif;">Nicholas Cage</p>
-            <p style="color: white; font-size: 12px; padding: 1px 27px; font-family: 'Roboto', sans-serif;">A newly-paroled former US Ranger aboard a high-security aircraft finds himself hijacked, when hardened, dangerous convicts seize control of the plane.
+            <p style="color: white; font-size: 12px; padding: 1px 27px; font-family: 'Roboto', sans-serif; padding-bottom: 50px;">A newly-paroled former US Ranger aboard a high-security aircraft finds himself hijacked, when hardened, dangerous convicts seize control of the plane.
          
             </p>
         </td>
@@ -237,10 +253,10 @@
     <!--Featured Movie/Banner Img2-->
     <tr>
         <td>
-            <a href="https://tubitv.com/movies/329435"><img src="images\safe.jpg" width="91%" style="padding: 1px 27px;"></a>
+            <a href="https://tubitv.com/movies/329435"><img src="images\safe.jpg" width="100%" ></a>
             <p style="font-size: 30px; font-weight: bold; padding: .5px 27px; color: white; font-family: 'Roboto', sans-serif;">Safe</p>
             <p style="font-size: 12px; text-decoration:underline; padding: 1px 27px; color: white; font-family: 'Roboto', sans-serif;">Jason Statham</p>
-            <p style="color: white; font-size: 12px; padding: 1px 27px; font-family: 'Roboto', sans-serif;"> A newly-paroled former US Ranger aboard a high-security aircraft finds himself hijacked, when hardened, dangerous convicts seize control of the plane.
+            <p style="color: white; font-size: 12px; padding: 1px 27px; font-family: 'Roboto', sans-serif;"> A prodigy child can memorize complex numbers. One man stands in between a deadly gang who will do anything to capture this girl.
          
             </p>
         </td>
@@ -263,12 +279,12 @@
     <!--Useful Links-->
 
     <tr >
-        <td style="background-color: white; ">
+        <td style="background-color: white; " width="100%">
             <p style="text-align:center; font-weight: bold; font-family: 'Roboto', sans-serif;">Useful Links to Get You Started</p>
-            <div style="text-align: center; list-style: none; color: rgb(240, 38, 24);">
-                <a href="#" style="color:rgb(240, 38, 24);"><p style="display: inline-block;  padding: 5px 5px; font-family: 'Roboto', sans-serif;">My Account</p></a>
-                <a href="#" style="color:rgb(240, 38, 24);"><p style="display: inline-block;  padding: 5px 5px; font-family: 'Roboto', sans-serif;">Help Center</p></a>
-                <a href="#" style="color:rgb(240, 38, 24);"><p style="display: inline-block;  padding: 5px 5px; font-family: 'Roboto', sans-serif;">Devices</p></a>
+            <div style="text-align: center; list-style: none; color: rgb(241, 48, 34);">
+                <a href="#" style="color:rgb(240, 38, 24);"><p style="display: inline-block;  padding: 5px 5px; font-family: 'Roboto', sans-serif; font-size: 13px;">My Account</p></a>
+                <a href="#" style="color:rgb(240, 38, 24);"><p style="display: inline-block;  padding: 5px 5px; font-family: 'Roboto', sans-serif; font-size: 13px;">Help Center</p></a>
+                <a href="#" style="color:rgb(240, 38, 24);"><p style="display: inline-block;  padding: 5px 5px; font-family: 'Roboto', sans-serif; font-size: 13px;">Devices</p></a>
             </div>
         </td>
     </tr>
